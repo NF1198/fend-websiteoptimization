@@ -1,0 +1,32 @@
+{
+  "name": "frontend-nanodegree-mobile-portfolio",
+  "version": "1.0.0",
+  "description": "Nicholas Folse Website Optimization Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "udacity"
+  ],
+  "author": "Nicholas Folse via Udacity",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udacity/frontend-nanodegree-mobile-portfolio/issues"
+  },
+  "homepage": "https://github.com/udacity/frontend-nanodegree-mobile-portfolio#readme",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "1.0.0",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-cssmin": "1.0.1",
+    "grunt-contrib-htmlmin": "1.4.0",
+    "grunt-contrib-uglify": "1.0.1",
+    "grunt-responsive-images": "0.1.9",
+    "load-grunt-tasks": "3.5.0"
+  }
+}
