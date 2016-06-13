@@ -21,27 +21,19 @@ Install grunt dependencies with `npm install`.
 
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
-1 Optimized images (used WebP format for profilepic and pizzeria thumbnail)
-
-1 Inlined style.css, added media="print" for print.css
-
-1 Load web fonts asynchronously with javascript
-
-1 Load javascript with async
-
-1 Moved inlined javascript to end of html
-
-1 Minified HTML, CSS, & Javascript
+1. Optimized images (used WebP format for profilepic and pizzeria thumbnail)
+1. Inlined style.css, added media="print" for print.css
+1. Load web fonts asynchronously with javascript
+1. Load javascript with async
+1. Moved inlined javascript to end of html
+1. Minified HTML, CSS, & Javascript
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-1 `function changePizzaSizes(size)`: Refactored function to apply size fraction directly instead of inefficiently computing delta size.
-
-1 `function updatePositions()`: Refactored function to efficiently compute metrics for computing new style.left property values.
-
-1 `scroll event listener`: Implemented helper class `EventTimer`, which rate-limits how often the browser calls `updatePositions`. (Note "skipped" notifications in the console)
-
-1 `movingPizzaCount` : Upon document creation, determine the number of "moving pizzas" that are required to fill the screen (from top to bottom) and only create this many pizzas.
+1. `function changePizzaSizes(size)`: Refactored function to apply size fraction directly instead of inefficiently computing delta size.
+1. `function updatePositions()`: Refactored function to efficiently compute metrics for computing new style.left property values.
+1. `scroll event listener`: Implemented helper class `EventTimer`, which rate-limits how often the browser calls `updatePositions`. (Note "skipped" notifications in the console)
+1. `movingPizzaCount` : Upon document creation, determine the number of "moving pizzas" that are required to fill the screen (from top to bottom) and only create this many pizzas.
 
 ### Customization with Bootstrap
 The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in `dist/css/portfolio.css` in the portfolio repo.
