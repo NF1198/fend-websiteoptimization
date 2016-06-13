@@ -93,6 +93,7 @@ module.exports = function(grunt) {
                     sizes: [{
                         height: 100,
                         width: 73,
+                        aspectRatio: false,
                         quality: 60,
                         rename: false
                     }]
