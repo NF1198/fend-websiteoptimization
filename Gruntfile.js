@@ -83,7 +83,23 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: ['**/*.{jpg,gif,png}', '!**/profilepic.*'],
+                    src: ['**/*.{jpg,gif,png}', '!**/profilepic.*', '!**/pizza.png'],
+                    cwd: 'src/',
+                    dest: 'dist/'
+                }]
+            },
+            pizzas: {
+                options: {
+                    sizes: [{
+                        height: 100,
+                        width: 73,
+                        quality: 60,
+                        rename: false
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    src: ['**/pizza.png'],
                     cwd: 'src/',
                     dest: 'dist/'
                 }]
