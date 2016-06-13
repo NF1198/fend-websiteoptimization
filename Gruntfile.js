@@ -14,6 +14,14 @@ module.exports = function(grunt) {
                     dest: 'dist/'
                 }],
             },
+            images: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: ['**/*.webp', '**/profilepic.png'],
+                    dest: 'dist/'
+                }],
+            }
         },
         uglify: {
             options: {},
@@ -75,7 +83,7 @@ module.exports = function(grunt) {
                 },
                 files: [{
                     expand: true,
-                    src: ['**/*.{jpg,gif,png}', '!**/profilepic.jpg'],
+                    src: ['**/*.{jpg,gif,png}', '!**/profilepic.*'],
                     cwd: 'src/',
                     dest: 'dist/'
                 }]
@@ -95,5 +103,6 @@ module.exports = function(grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['copy', 'uglify', 'cssmin', 'htmlmin', 'responsive_images']);
+    grunt.registerTask('html', ['htmlmin', 'cssmin'])
 
 };
